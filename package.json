@@ -1,0 +1,65 @@
+{
+  "name": "siteaudit",
+  "version": "0.1.0",
+  "description": "Fast CLI that crawls a website and reports SEO, accessibility and quality issues, with HTML/JSON reports and CI-friendly exit codes.",
+  "keywords": [
+    "seo",
+    "accessibility",
+    "a11y",
+    "audit",
+    "crawler",
+    "lint",
+    "cli",
+    "landing-page"
+  ],
+  "homepage": "https://github.com/vovaddk/siteaudit#readme",
+  "bugs": "https://github.com/vovaddk/siteaudit/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovaddk/siteaudit.git"
+  },
+  "license": "MIT",
+  "author": "Vova Dudnyk",
+  "type": "module",
+  "bin": {
+    "siteaudit": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.map"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "node src/cli.ts examples/demo-site --html reports/demo-report.html --json reports/demo-report.json --fail-on none",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "commander": "^15.1.0",
+    "domhandler": "^5.0.3",
+    "picocolors": "^1.1.1",
+    "robots-parser": "^3.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Acme Forms</title>
+  <meta name="description" content="Simple pricing: free for one page, $19 per month for unlimited pages.">
+  <link rel="canonical" href="https://acme.example/pricing">
+  <meta property="og:title" content="Acme pricing">
+  <meta property="og:description" content="Free for one page.">
+  <meta property="og:image" content="https://acme.example/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+</head>
+<body>
+  <!-- Deliberate issue: two h1 elements -->
+  <h1>Pricing</h1>
+  <h1>Pick a plan</h1>
+  <section>
+    <h2>Pro</h2>
+    <p>$19 per month.</p>
+    <!-- Deliberate issues: icon-only button and link without accessible names -->
+    <button><svg width="16" height="16" aria-hidden="true"><path d="M2 8h12"/></svg></button>
+    <a href="/contact"><svg width="16" height="16"><circle cx="8" cy="8" r="6"/></svg></a>
+  </section>
+  <a href="/">Home</a>
+</body>
+</html>

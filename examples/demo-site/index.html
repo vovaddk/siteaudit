@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acme Forms: launch-ready landing pages</title>
+  <meta name="description" content="Acme Forms builds fast, accessible landing pages with forms that convert.">
+  <link rel="canonical" href="https://acme.example/">
+  <meta property="og:title" content="Acme Forms">
+  <meta property="og:description" content="Fast, accessible landing pages.">
+  <meta property="og:image" content="https://acme.example/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/site.css">
+  <!-- Deliberate issue: render-blocking script -->
+  <script src="/assets/analytics.js"></script>
+</head>
+<body>
+  <header>
+    <a href="/">Acme Forms</a>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact">Contact</a>
+      <!-- Deliberate issue: broken link -->
+      <a href="/careers">Careers</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Landing pages that ship on Friday</h1>
+    <!-- Deliberate issues: 258 KB image without alt text -->
+    <img src="/assets/hero.png" width="400" height="220">
+    <h2>Why teams pick Acme</h2>
+    <p>Templates, analytics and forms in one place.</p>
+  </main>
+</body>
+</html>

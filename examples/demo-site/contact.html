@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- Deliberate issues: no lang, no viewport, noindex left over from staging, unlabelled inputs -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Acme Forms</title>
+  <meta name="description" content="Talk to the Acme team about your next launch.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://acme.example/contact">
+  <meta property="og:title" content="Contact Acme">
+  <meta property="og:description" content="Talk to the team.">
+  <meta property="og:image" content="https://acme.example/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+</head>
+<body>
+  <h1>Contact us</h1>
+  <form action="/thanks" method="post">
+    <input type="email" name="email" placeholder="you@company.com">
+    <textarea name="message" placeholder="What are you launching?"></textarea>
+    <label>Company <input type="text" name="company"></label>
+    <button type="submit">Send message</button>
+  </form>
+  <a href="/">Home</a>
+</body>
+</html>
